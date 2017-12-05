@@ -1,0 +1,28 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+.rate {
+    border: none;
+    float: left;
+}
+
+.rate label:before {
+    margin: 5px;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rate label {
+    color: lightgray;
+    float: right;
+}
+
+.rate input {
+    display: none;
+}
+
+.rate input:checked ~ label,/*checked star and stars before*/
+.rate input:hover ~ label/*hovered star and stars before*/
+{
+    color: gold;
+}
